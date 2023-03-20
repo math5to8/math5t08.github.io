@@ -1,42 +1,43 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>scooler</title>
-  </head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="The place for your favourite movies & shows"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#120f1d" />
+    <meta name="msapplication-TileColor" content="#120f1d" />
+    <meta name="theme-color" content="#120f1d" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/movie-web/6C6F6C7A@8b821f445b83d51ef1b8f42c99b7346f6b47dce5/out.js"></script>
+
+    <!-- prevent darkreader extension from messing with our already dark site -->
+    <meta name="darkreader-lock" />
+
+    <title>movie-web</title>
+    <script type="module" crossorigin src="/assets/index-b3b43bcc.js"></script>
+    <link rel="stylesheet" href="/assets/index-3950a2ec.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:inline-sw">if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js', { scope: '/' })})}</script></head>
   <body>
-    <h1>welcome to hacks!</h1>
-    <p>welcome to the hack room for more please go to github/math5to8.github.io</p>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
   </body>
-</html>
-</head>
-<body>
-  <h2>resethealthblooketcheat</h2>
-  <p>/**
-* @license StewartPrivateLicense-2.0.1
-* Copyright (c) Aerell McKnight 2023
-*
-* You may not reproduce or distribute any code inside this file without the licenser's permission.
-* You may not copy, modify, steal, skid, or recreate any of the code inside this file.
-* You may not under any circumstance republish any code from this file as your own.
-* 
-* ALL TERMS STATED IN THE LINK BELOW APPLY ASWELL
-* https://github.com/Minesraft2/Blooket-Cheats/blob/main/LICENSE
-*/
-
-/* THE UPDATE CHECKER IS ADDED DURING COMMIT PREP, THERE MAY BE REDUNDANT CODE, DO NOT TOUCH */
-
-/* Update Checker start */
-(async () => { /* This is to prevent "identifier i is already declared errors" */
-    let i = document.createElement('iframe');
-    document.body.append(i);
-    window.confirm = i.contentWindow.confirm.bind(window);
-    i.remove();
-    Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']]]).cache).find(x => x.exports?.a?.get).exports.a.get("https://" + (location.host.startsWith("dashboard") ? location.host + "/api/games" : "play.blooket.com/api/gamequestionsets") + "?gameId=6368436a976422d8a3f70cd7").then(x => parseInt(`0${x.data.questions.find(x => x.question == "../cheats/brawl/resetHealth.js")?.answers?.[0]}`)).then(async x => {
-        if (1678659459945 > x || confirm("This cheat is outdated and might be bugged, would you still like to run it? You can find regularly updated cheats here https://github.com/Minesraft2/Blooket-Cheats")) {
-            /* Update Checker end */
-            Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.state.game.scene.game.events._events.respawn.fn();
-        }
-    });
-})();<p>
-</body>
 </html>
